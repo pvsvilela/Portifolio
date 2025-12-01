@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulo Valentino Santos Vilela | Portfolio</title>
 <html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -8,6 +13,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-dark">
+  <header class="top-nav">
+    <div class="brand">PVSV</div>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+      ☰
+    </button>
+    <div class="nav-rail" id="primaryNav">
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+        <a href="#design-system">Design System</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="btn ghost" id="themeToggle" aria-label="Toggle color theme">Light mode</button>
+        <a class="btn solid" href="mailto:pvs.vilela@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <p class="eyebrow">São Paulo, Brazil · Remote friendly</p>
+        <h1>Paulo Valentino Santos Vilela</h1>
+        <p class="subtitle">UX/UI Analyst · UX Designer · UI Designer · Project Analyst · Developer</p>
+        <div class="cta-group">
+          <a class="btn solid" href="#contact">Start a project</a>
+          <a class="btn outline" href="#experience">Ride the journey</a>
+        </div>
+      </div>
+      <div class="hero-train" role="presentation">
+        <div class="tracks"></div>
+        <div class="train">
+          <div class="locomotive">Hero</div>
+          <div class="car">UX/UI</div>
+          <div class="car">Tech</div>
+          <div class="car">People</div>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -54,6 +101,27 @@
       </div>
     </section>
 
+    <section class="section about" id="about">
+      <div class="section-header">
+        <p class="eyebrow">About</p>
+        <h2>Grew at the intersection of technology and design</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I grew professionally at the intersection of technology and design.
+          I started in software development (React, .NET, Python, Azure), but quickly discovered that what truly drives me are the people behind the screens. That led me naturally to UX and UI, where logic, sensitivity, and creativity meet.</p>
+          <p>I translate complex problems into simple, intuitive, coherent experiences. I enjoy understanding how people think and behave when using digital products — and I’m passionate about the micro-interactions that silently improve an interface.</p>
+          <p>My daily work blends research, prototyping, testing, refinement, and strong collaboration with product and engineering teams. My technical background allows me to act as a bridge between designers and developers.</p>
+          <p>As a UX/UI Analyst Pleno, my goal is to create accessible, functional, meaningful digital experiences guided by empathy, purpose, and detail.</p>
+        </div>
+        <div class="story-block" aria-hidden="true">
+          <div class="story-line"></div>
+          <div class="story-stops">
+            <span class="stop active">Tech roots</span>
+            <span class="stop">UX mindset</span>
+            <span class="stop">Human bridges</span>
+            <span class="stop">Accessible outcomes</span>
+          </div>
     <section id="about" class="section card" aria-labelledby="about-title">
       <div class="section-header">
         <p class="eyebrow">About</p>
@@ -75,6 +143,15 @@
       </div>
     </section>
 
+    <section class="section skills" id="skills">
+      <div class="section-header">
+        <p class="eyebrow">Skills</p>
+        <h2>Tools and languages that keep the train on track</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>UX Skills</h3>
+          <div class="tag-grid">
     <section id="skills" class="section" aria-labelledby="skills-title">
       <div class="section-header">
         <p class="eyebrow">Toolkit</p>
@@ -94,6 +171,9 @@
             <span class="tag">UX Writing (functional)</span>
           </div>
         </div>
+        <div class="skill-card">
+          <h3>UI Skills</h3>
+          <div class="tag-grid">
         <div class="skill-group">
           <h3>UI</h3>
           <div class="tags">
@@ -104,6 +184,9 @@
             <span class="tag">Microinteractions</span>
           </div>
         </div>
+        <div class="skill-card">
+          <h3>Technical Skills</h3>
+          <div class="tag-grid">
         <div class="skill-group">
           <h3>Technical</h3>
           <div class="tags">
@@ -116,6 +199,9 @@
             <span class="tag">Documentation</span>
           </div>
         </div>
+        <div class="skill-card">
+          <h3>Soft Skills</h3>
+          <div class="tag-grid">
         <div class="skill-group">
           <h3>Soft</h3>
           <div class="tags">
@@ -126,6 +212,9 @@
             <span class="tag">Organization</span>
           </div>
         </div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <div class="tag-grid">
         <div class="skill-group">
           <h3>Languages</h3>
           <div class="tags">
@@ -134,6 +223,9 @@
             <span class="tag">Spanish (Professional)</span>
           </div>
         </div>
+        <div class="skill-card">
+          <h3>Certifications</h3>
+          <div class="tag-grid">
         <div class="skill-group">
           <h3>Certifications</h3>
           <div class="tags">
@@ -145,6 +237,110 @@
       </div>
     </section>
 
+    <section class="section experience" id="experience">
+      <div class="section-header">
+        <p class="eyebrow">Journey</p>
+        <h2>Experience timeline — each car is a milestone</h2>
+      </div>
+      <div class="train-wrapper" aria-label="Experience timeline">
+        <div class="tracks"></div>
+        <div class="train-cars">
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">FI</div>
+              <div>
+                <h3>FI Group — UX/UI Analyst Pleno</h3>
+                <p class="meta">2025–Present</p>
+              </div>
+            </div>
+            <p class="car-desc">Focused on user-centered design, improving processes, facilitating collaboration between squads, refining interactions, and delivering accessible digital solutions.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">FI</div>
+              <div>
+                <h3>FI Group — UX/UI Analyst</h3>
+                <p class="meta">2024–2025</p>
+              </div>
+            </div>
+            <p class="car-desc">Conducted market research, prototyping, usability testing, UI creation, internal team collaboration, and delivery of functional and consistent interfaces.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">FI</div>
+              <div>
+                <h3>FI Group — Systems Analyst Jr.</h3>
+                <p class="meta">2022–2024</p>
+              </div>
+            </div>
+            <p class="car-desc">Documentation, product evolution, integrations, maintenance, and development using React, .NET 6, Python and Azure.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">PSP</div>
+              <div>
+                <h3>Prefeitura de São Paulo — Graphic Designer</h3>
+                <p class="meta">2020–2021</p>
+              </div>
+            </div>
+            <p class="car-desc">Created visual materials for PROCON social media and internal communication.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">ED</div>
+              <div>
+                <h3>EasyDentes — Data Management Intern</h3>
+                <p class="meta">2018</p>
+              </div>
+            </div>
+            <p class="car-desc">Supported data management tasks and contributed to organized information flows.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">IT</div>
+              <div>
+                <h3>Império Tecnologia — Junior Developer</h3>
+                <p class="meta">2017</p>
+              </div>
+            </div>
+            <p class="car-desc">Developed features and strengthened programming fundamentals while collaborating with senior engineers.</p>
+          </article>
+          <article class="car-card">
+            <div class="car-head">
+              <div class="logo">FIAP</div>
+              <div>
+                <h3>FIAP — Technical Support Intern</h3>
+                <p class="meta">2014–2016</p>
+              </div>
+            </div>
+            <p class="car-desc">Provided hands-on technical support, troubleshooting, and infrastructure assistance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-header">
+        <p class="eyebrow">Case studies</p>
+        <h2>Projects in motion</h2>
+        <p class="section-subtitle">Placeholders ready for future uploads — problem, process, outcomes, and visuals.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-image placeholder">Image / prototype</div>
+          <div class="project-body">
+            <h3>Project title placeholder</h3>
+            <p class="meta">Problem · Process · Outcome</p>
+            <p>Reserved for a concise story: user problem, research insights, prototyping approach, usability learning, and impact.</p>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-image placeholder">Image / prototype</div>
+          <div class="project-body">
+            <h3>Project title placeholder</h3>
+            <p class="meta">Problem · Process · Outcome</p>
+            <p>Reserved for a concise story: user problem, research insights, prototyping approach, usability learning, and impact.</p>
+          </div>
     <section id="experience" class="section" aria-labelledby="experience-title">
       <div class="section-header">
         <p class="eyebrow">Journey</p>
@@ -255,6 +451,19 @@
       </div>
     </section>
 
+    <section class="section education" id="education">
+      <div class="section-header">
+        <p class="eyebrow">Education</p>
+        <h2>Learning the tracks</h2>
+      </div>
+      <div class="education-grid">
+        <div class="edu-card">
+          <h3>FIAP — Information Systems</h3>
+          <p class="meta">2016–2020</p>
+        </div>
+        <div class="edu-card">
+          <h3>COPI–FIAP — Technical High School in Informatics</h3>
+          <p class="meta">2008–2015</p>
     <section id="education" class="section" aria-labelledby="education-title">
       <div class="section-header">
         <p class="eyebrow">Learning</p>
@@ -278,6 +487,109 @@
       </div>
     </section>
 
+    <section class="section contact" id="contact">
+      <div class="section-header">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s design the next stop together</h2>
+        <p class="section-subtitle">Open for collaborations, UX/UI challenges, and product conversations.</p>
+      </div>
+      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Project ideas, timelines, context" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn solid" id="submitBtn">Send</button>
+          <a class="btn ghost" href="mailto:pvs.vilela@gmail.com">pvs.vilela@gmail.com</a>
+        </div>
+        <p class="form-note">Form ready for API integration (Make automation placeholder).</p>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <section class="section design-system" id="design-system">
+      <div class="section-header">
+        <p class="eyebrow">Design System</p>
+        <h2>Tokens, components, and the train DNA</h2>
+      </div>
+      <div class="ds-grid">
+        <div class="ds-card">
+          <h3>Color tokens</h3>
+          <div class="color-row">
+            <div class="swatch primary"></div>
+            <div>
+              <p class="meta">Primary / Azure Night</p>
+              <p>#5BD2F0</p>
+            </div>
+          </div>
+          <div class="color-row">
+            <div class="swatch surface"></div>
+            <div>
+              <p class="meta">Surface / Charcoal</p>
+              <p>#0F141A</p>
+            </div>
+          </div>
+          <div class="color-row">
+            <div class="swatch accent"></div>
+            <div>
+              <p class="meta">Accent / Signal</p>
+              <p>#F0A500</p>
+            </div>
+          </div>
+          <div class="color-row">
+            <div class="swatch light"></div>
+            <div>
+              <p class="meta">Light Mode Base</p>
+              <p>#F6F7FB</p>
+            </div>
+          </div>
+        </div>
+        <div class="ds-card">
+          <h3>Typography</h3>
+          <ul>
+            <li><strong>Inter</strong> — 400, 500, 600, 700</li>
+            <li>H1 48/120%; H2 32/130%; H3 24/130%; Body 16/150%</li>
+            <li>Button: 14/140% uppercase, medium</li>
+          </ul>
+        </div>
+        <div class="ds-card">
+          <h3>Components</h3>
+          <div class="component-row">
+            <button class="btn solid small">Solid</button>
+            <button class="btn outline small">Outline</button>
+            <button class="btn ghost small">Ghost</button>
+          </div>
+          <div class="component-row">
+            <input type="text" value="Input field" aria-label="Input sample">
+            <button class="toggle sample">Toggle</button>
+          </div>
+          <p class="meta">Auto-layout, responsive constraints, focus-visible styles.</p>
+        </div>
+        <div class="ds-card">
+          <h3>Grid &amp; spacing</h3>
+          <p>12-column responsive grid, 8px spacing scale (8, 12, 16, 24, 32, 48, 64). Sections use 1200px max width with generous breathing room.</p>
+        </div>
+        <div class="ds-card">
+          <h3>Train assets</h3>
+          <p>Line icons and wagon blocks reuse the same corner radius, stroke, and accent colors. Prototyping connections mirror the journey flow from hero to contact.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Built for Paulo Valentino Santos Vilela · LinkedIn: <a href="https://www.linkedin.com/in/paulo-valentino-santos-vilela-825345a4" target="_blank" rel="noreferrer">Profile</a></p>
+  </footer>
+
+  <script src="script.js"></script>
     <section id="contact" class="section card" aria-labelledby="contact-title">
       <div class="section-header">
         <p class="eyebrow">Contact</p>
