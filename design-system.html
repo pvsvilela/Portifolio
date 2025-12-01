@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System — Paulo Valentino Santos Vilela</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="top-bar">
+    <div class="logo-mark" aria-hidden="true">DS</div>
+    <nav class="nav-links" aria-label="Design system">
+      <a href="#colors">Colors</a>
+      <a href="#typography">Typography</a>
+      <a href="#layout">Grid &amp; spacing</a>
+      <a href="#components">Components</a>
+      <a href="index.html">← Back to site</a>
+    </nav>
+    <div class="actions">
+      <button class="ghost" id="theme-toggle" aria-label="Toggle color mode">Light mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section" id="colors" aria-labelledby="colors-title">
+      <div class="section-header">
+        <p class="eyebrow">Design tokens</p>
+        <h1 id="colors-title">Color system</h1>
+        <p class="body">Dark-first palette with matching light tokens for quick developer handoff.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="project-card">
+          <h3>Dark mode</h3>
+          <div class="tags">
+            <span class="tag">bg-primary: #0f1115</span>
+            <span class="tag">bg-elevated: #171a20</span>
+            <span class="tag">accent: #6cf0c2</span>
+            <span class="tag">border: #2c323d</span>
+            <span class="tag">text-primary: #f5f7fb</span>
+            <span class="tag">text-secondary: #c6ccd9</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <h3>Light mode</h3>
+          <div class="tags">
+            <span class="tag">bg-primary: #f7f8fb</span>
+            <span class="tag">bg-elevated: #ffffff</span>
+            <span class="tag">accent: #0f9d7a</span>
+            <span class="tag">border: #dce1eb</span>
+            <span class="tag">text-primary: #0f1115</span>
+            <span class="tag">text-secondary: #2d323c</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="typography" aria-labelledby="type-title">
+      <div class="section-header">
+        <p class="eyebrow">Type</p>
+        <h2 id="type-title">Typography</h2>
+      </div>
+      <div class="education-list">
+        <div class="education-card">
+          <p class="eyebrow">Heading</p>
+          <h1>Inter — 700</h1>
+          <p class="body">Used for hero titles and section headings. Responsive clamp sizes.</p>
+        </div>
+        <div class="education-card">
+          <p class="eyebrow">Body</p>
+          <p class="body">Inter — 400 / 500 with 1.6 line-height. Accessible contrast on both themes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="layout" aria-labelledby="layout-title">
+      <div class="section-header">
+        <p class="eyebrow">Layout</p>
+        <h2 id="layout-title">Grid &amp; spacing</h2>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Grid</h3>
+          <p class="body">Max width 1200px, responsive columns via auto-fit minmax(280px, 1fr). Auto-layout with flex/grid for consistent flows.</p>
+        </div>
+        <div class="project-card">
+          <h3>Spacing scale</h3>
+          <p class="body">4, 8, 12, 16, 20, 24, 32, 40, 48, 64px tokens (space-1…space-10). Applied to sections, cards, and controls.</p>
+        </div>
+        <div class="project-card">
+          <h3>Radius &amp; shadows</h3>
+          <p class="body">Rounded corners at 10/16/24px and soft layered shadows for elevated surfaces.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="components" aria-labelledby="components-title">
+      <div class="section-header">
+        <p class="eyebrow">UI kit</p>
+        <h2 id="components-title">Components</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="education-card">
+          <p class="eyebrow">Buttons</p>
+          <div class="cta-group">
+            <a class="primary" href="#">Primary</a>
+            <a class="ghost" href="#">Ghost</a>
+          </div>
+          <p class="body">States: default, hover/focus, disabled (set opacity 0.45). Minimum touch target 44px.</p>
+        </div>
+        <div class="education-card">
+          <p class="eyebrow">Inputs</p>
+          <form class="contact-form">
+            <label>Email<input type="email" placeholder="name@email.com"></label>
+            <label>Message<textarea rows="3" placeholder="How can we help?"></textarea></label>
+          </form>
+          <p class="body">Accessible focus outline using accent token; prepared for API wiring.</p>
+        </div>
+        <div class="education-card">
+          <p class="eyebrow">Train motif</p>
+          <div class="storyline">
+            <div class="track"></div>
+            <div class="story-cars">
+              <div class="car">Stage 1</div>
+              <div class="car">Stage 2</div>
+              <div class="car">Stage 3</div>
+            </div>
+          </div>
+          <p class="body">Reusable decorative asset for timelines and hero visuals. Keep motion subtle for reduced-motion users.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <p class="eyebrow">Handoff ready</p>
+      <p class="body">Component names mirror class names for dev parity. Prototype links can attach to anchor navigation.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">View portfolio</a>
+      <a href="#">Spec doc</a>
+    </div>
+  </footer>
+</body>
+</html>
