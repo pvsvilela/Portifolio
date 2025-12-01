@@ -8,28 +8,29 @@ const formStatus = document.getElementById('formStatus');
 const submitBtn = document.getElementById('submitBtn');
 
 function setTheme(mode) {
-  if (mode === 'light') {
-    body.classList.remove('theme-dark');
-    body.classList.add('theme-light');
-    document.documentElement.classList.add('light');
-    toggle.textContent = 'Dark mode';
-  } else {
-    body.classList.add('theme-dark');
-    body.classList.remove('theme-light');
-    document.documentElement.classList.remove('light');
-    toggle.textContent = 'Light mode';
+  const isLight = mode === 'light';
+
+  body.classList.toggle('theme-light', isLight);
+  body.classList.toggle('theme-dark', !isLight);
+  document.documentElement.classList.toggle('light', isLight);
+
+  if (toggle) {
+    toggle.textContent = isLight ? 'Dark mode' : 'Light mode';
   }
+
   localStorage.setItem('theme', mode);
 }
 
 const saved = localStorage.getItem('theme');
 setTheme(saved || 'dark');
 
-toggle.addEventListener('click', () => {
-  const current = body.classList.contains('theme-light') ? 'light' : 'dark';
-  const next = current === 'light' ? 'dark' : 'light';
-  setTheme(next);
-});
+if (toggle) {
+  toggle.addEventListener('click', () => {
+    const current = body.classList.contains('theme-light') ? 'light' : 'dark';
+    const next = current === 'light' ? 'dark' : 'light';
+    setTheme(next);
+  });
+}
 
 // simple focus style support for keyboard navigation
 function handleFirstTab(e) {
